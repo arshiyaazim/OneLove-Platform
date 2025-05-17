@@ -1,0 +1,69 @@
+✅ I want you to finish the development of the OneLove Dating App project.
+
+Here's what I need you to complete now:
+
+🔮 1. AI Profile System (Preloaded)
+Create 1000+ preloaded AI profiles with:
+
+name, country, gender, age, photo URL, personality tag
+
+scripted responses for flirting, romantic chat, jokes, emotional support
+
+Each AI profile should have a unique character and chat script based on personality type
+
+Integrate these into a fake chat system with real users (but no calls)
+
+Create AIProfile.kt, AIProfileRepository, and AIChatViewModel
+
+Add an AIChatScreen for chatting with AI profiles
+
+🔐 2. Cloud Functions for Payments
+Create Firebase Cloud Functions to:
+
+Handle Stripe webhooks for payment confirmation
+
+Update Firestore with verified subscriptions
+
+Send custom FCM notifications on successful payment
+
+Integrate with SubscriptionViewModel and PremiumAccessManager
+
+💬 3. Finish Notifications System
+Finalize NotificationsActivity.kt
+
+Connect push notifications with FCM
+
+Show updates for messages, matches, offers, subscription reminders
+
+📈 4. Boost Profile & Point System
+Add point system:
+
+Earn points for daily login, uploading media, watching videos
+
+Spend points for boost or sending premium offers
+
+Show current points in profile sidebar
+
+Build PointsManager, BoostManager, and RewardViewModel
+
+👨‍🔧 5. Final Bug Fixes & Cleanup
+Ensure all ViewModels, Repositories, UI Screens, and Navigation routes are complete
+
+Finalize all UI states: loading, error, empty, success
+
+Ensure all features respect access control (free vs premium)
+
+Final QA: Fix any missing links or unresolved classes
+
+📦 6. Prepare for Production
+Ensure full Firebase integration
+
+Use latest AGP, Kotlin, Firebase BOM, Compose versions
+
+Optimize build.gradle, dependencies, and permission declarations
+
+Generate a release variant ready for publishing on Play Store
+
+🔗 Website: https://onelove.kilagee.com
+🎯 Project Goal: A full-featured, fun, secure dating app with chat, video/audio calls, offers, preloaded AI profiles, monetization, and privacy control.
+

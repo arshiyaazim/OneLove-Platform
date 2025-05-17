@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OneLove</string>
+    
+    <!-- Authentication -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">Create Account</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="enter_email_for_reset">Enter your email to reset your password</string>
+    <string name="send_reset_link">Send Reset Link</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="agree_to_terms">I agree to the %1$s and %2$s</string>
+    
+    <!-- Navigation -->
+    <string name="discover">Discover</string>
+    <string name="matches">Matches</string>
+    <string name="chat">Chat</string>
+    <string name="profile">Profile</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Profile -->
+    <string name="edit_profile">Edit Profile</string>
+    <string name="about_me">About Me</string>
+    <string name="interests">Interests</string>
+    <string name="location">Location</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="photo_limit">You can add up to 6 photos</string>
+    <string name="change_profile_picture">Change Profile Picture</string>
+    
+    <!-- Discovery -->
+    <string name="filter">Filter</string>
+    <string name="age_range">Age Range</string>
+    <string name="distance">Distance</string>
+    <string name="advanced_filters">Advanced Filters</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="reset_filters">Reset Filters</string>
+    <string name="no_matches_found">No matches found</string>
+    <string name="adjust_filters">Adjust your filters to see more people</string>
+    <string name="likes_you">Likes You</string>
+    <string name="new_match">New Match!</string>
+    <string name="match_request_sent">Match Request Sent!</string>
+    
+    <!-- Chat -->
+    <string name="send_message">Send Message</string>
+    <string name="type_message">Type a message</string>
+    <string name="no_messages">No messages yet. Say hello!</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+    <string name="last_seen">Last seen %1$s</string>
+    <string name="typing">Typing…</string>
+    
+    <!-- Calls -->
+    <string name="audio_call">Audio Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="incoming_call">Incoming Call</string>
+    <string name="outgoing_call">Outgoing Call</string>
+    <string name="call_ended">Call Ended</string>
+    <string name="call_duration">Call Duration: %1$s</string>
+    <string name="accept">Accept</string>
+    <string name="decline">Decline</string>
+    <string name="end_call">End Call</string>
+    <string name="mute">Mute</string>
+    <string name="unmute">Unmute</string>
+    <string name="speaker">Speaker</string>
+    <string name="camera">Camera</string>
+    <string name="switch_camera">Switch Camera</string>
+    
+    <!-- Subscription and Payment -->
+    <string name="subscription">Subscription</string>
+    <string name="premium">Premium</string>
+    <string name="subscription_plans">Subscription Plans</string>
+    <string name="current_plan">Current Plan</string>
+    <string name="upgrade">Upgrade</string>
+    <string name="payment_methods">Payment Methods</string>
+    <string name="add_payment_method">Add Payment Method</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="card_holder_name">Card Holder Name</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="cancel_subscription">Cancel Subscription</string>
+    <string name="subscription_details">Subscription Details</string>
+    <string name="next_billing_date">Next Billing Date: %1$s</string>
+    <string name="auto_renew">Auto-Renew</string>
+    <string name="purchase_history">Purchase History</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="save_percent">Save %1$s%%</string>
+    
+    <!-- Settings -->
+    <string name="account">Account</string>
+    <string name="notifications">Notifications</string>
+    <string name="privacy">Privacy</string>
+    <string name="blocked_users">Blocked Users</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="help_support">Help &amp; Support</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="delete_account">Delete Account</string>
+    
+    <!-- Notifications -->
+    <string name="new_message">New Message</string>
+    <string name="new_match_notification">You have a new match!</string>
+    <string name="message_notification">%1$s sent you a message</string>
+    <string name="match_request_notification">%1$s wants to match with you</string>
+    <string name="like_notification">%1$s liked your profile</string>
+    <string name="call_notification">%1$s is calling you</string>
+    
+    <!-- Errors and Alerts -->
+    <string name="error">Error</string>
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="try_again">Try Again</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="check_connection">Please check your internet connection and try again</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="location_permission_message">Location permission is required to find matches near you</string>
+    <string name="camera_permission_message">Camera permission is required to take photos</string>
+    <string name="microphone_permission_message">Microphone permission is required for calls</string>
+    <string name="storage_permission_message">Storage permission is required to upload photos</string>
+    
+    <!-- Actions -->
+    <string name="like">Like</string>
+    <string name="skip">Skip</string>
+    <string name="block">Block</string>
+    <string name="report">Report</string>
+    <string name="share">Share</string>
+    <string name="send_match_request">Send Match Request</string>
+    <string name="confirm">Confirm</string>
+    <string name="delete">Delete</string>
+    
+    <!-- Time/Date -->
+    <string name="just_now">Just now</string>
+    <string name="minutes_ago">%1$d min ago</string>
+    <string name="hours_ago">%1$d hrs ago</string>
+    <string name="yesterday">Yesterday</string>
+    
+    <!-- Placeholders for API Keys -->
+    <string name="stripe_publishable_key">pk_test_placeholder</string>
+</resources>

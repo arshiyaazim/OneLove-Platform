@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#E91E63</color>
+    <color name="primary_dark">#D81B60</color>
+    <color name="primary_variant">#C2185B</color>
+    
+    <color name="secondary">#673AB7</color>
+    <color name="secondary_dark">#5E35B1</color>
+    <color name="secondary_variant">#512DA8</color>
+    
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_dark">#121212</color>
+    
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_dark">#1E1E1E</color>
+    
+    <color name="error_light">#B00020</color>
+    <color name="error_dark">#CF6679</color>
+    
+    <color name="success_light">#4CAF50</color>
+    <color name="success_dark">#388E3C</color>
+    
+    <color name="warning_light">#FFC107</color>
+    <color name="warning_dark">#FFA000</color>
+    
+    <color name="info_light">#2196F3</color>
+    <color name="info_dark">#1976D2</color>
+    
+    <color name="gray_100">#F5F5F5</color>
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+    <color name="gray_400">#BDBDBD</color>
+    <color name="gray_500">#9E9E9E</color>
+    <color name="gray_600">#757575</color>
+    <color name="gray_700">#616161</color>
+    <color name="gray_800">#424242</color>
+    <color name="gray_900">#212121</color>
+    
+    <color name="heart_red">#FF4081</color>
+    <color name="match_gold">#FFD700</color>
+    <color name="premium_gold">#FFD700</color>
+    <color name="vip_purple">#9C27B0</color>
+    
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

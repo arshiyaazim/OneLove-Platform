@@ -1,0 +1,43 @@
+name: Release OneLove APK
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-release:
+    name: Build and Upload APK to Release
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+
+    - name: Grant execute permission to gradlew
+      run: chmod +x ./gradlew
+
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug
+
+    - name: Zip APK for Release
+      run: |
+        cd app/build/outputs/apk/debug
+        zip -r onelove-debug-apk.zip app-debug.apk
+
+    - name: Create GitHub Release and Upload APK
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: v1.0.${{ github.run_number }}
+        name: OneLove Debug Build ${{ github.run_number }}
+        body: |
+          🚀 OneLove APK built and released automatically.
+        files: app/build/outputs/apk/debug/onelove-debug-apk.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}

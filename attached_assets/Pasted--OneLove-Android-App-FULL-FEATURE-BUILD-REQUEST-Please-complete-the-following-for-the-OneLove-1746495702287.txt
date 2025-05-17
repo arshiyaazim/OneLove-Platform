@@ -1,0 +1,79 @@
+🚀 OneLove Android App — FULL FEATURE BUILD REQUEST
+
+Please complete the following for the OneLove dating app, targeting full functionality with premium features, modular architecture, and Android Studio compatibility.
+
+---
+
+✅ 1. AUTH SYSTEM & VIEWMODELS
+
+- Implement `AuthViewModel` to support:
+  - Email/password registration
+  - Firebase authentication
+  - Email verification
+  - Password reset
+  - Login state management
+
+✅ 2. USER PROFILE & PREFERENCES
+
+- `UserViewModel` with:
+  - Profile editing
+  - Preferences (gender, region, interests)
+  - Multi-language & regional settings
+  - Profile visibility controls
+  - Data sync with Firebase & local Room cache
+
+✅ 3. MESSAGING SYSTEM
+
+- `MessageViewModel` with:
+  - Send/receive text, emoji, image, and audio messages
+  - Chat history (Firestore + Room)
+  - Support for sealed class messages
+  - AI-generated conversation suggestions
+
+✅ 4. MATCHING SYSTEM
+
+- `MatchViewModel` with:
+  - Swipe/like logic
+  - Discovery filters (location, interests, premium filters)
+  - Blocking/reporting users
+  - Match status syncing with Firestore
+
+✅ 5. SUBSCRIPTIONS & MONETIZATION
+
+- `OfferViewModel` to handle:
+  - Offer presentation
+  - Tiered plan purchase triggers
+  - Stripe + bKash/Nagad integration
+  - Local reward point system (gamified upgrades)
+  - Subscription status tracking and caching
+
+---
+
+✅ 6. PREMIUM FEATURE IMPLEMENTATION
+
+- **Audio/Video Call** (Agora SDK or WebRTC)
+- **AI Chat Starter Generator** (based on user data or optional API like ChatGPT)
+- **Gamified User System** (points for profile actions, upgrades)
+- **Localization & Language Preferences** (system and user selectable)
+- **Advanced Privacy Shield Panel** (profile visibility, message control, block/report, account deletion)
+- **Multi-Tier Verification**:
+  - Tier 1: Email/OTP
+  - Tier 2: Photo check
+  - Tier 3: NID/passport upload with secure flags
+
+---
+
+✅ 7. DEVELOPMENT STANDARDS
+
+- Use **MVVM architecture**
+- Use **Dagger Hilt** for dependency injection
+- All repositories backed by Firebase + Room cache
+- ViewModels expose `StateFlow` or `LiveData`
+- All code Kotlin 2.0.21-compatible
+- Compatible with AGP 8.9.2, Gradle 8.11.1, and Java 17
+- Fully runnable in Android Studio after export
+
+---
+
+🛠 Provide a complete, clean, production-ready folder structure and Gradle setup. Final output should be ZIP-ready for Android Studio testing.
+

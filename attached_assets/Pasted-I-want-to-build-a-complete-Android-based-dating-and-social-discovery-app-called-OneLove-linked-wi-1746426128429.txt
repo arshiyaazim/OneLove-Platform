@@ -1,0 +1,38 @@
+I want to build a complete Android-based dating and social discovery app called "OneLove" (linked with my website onelove.kilagee.com). It should have:
+
+1. **Login & Signup System**:
+   - Email-based login/signup
+   - Forgot password
+   - Registration with fields: first name, last name, username, password, email, age declaration (18+), country (dropdown), location, gender, profile picture upload, and ID verification (passport/NID/license image upload)
+
+2. **Homepage Layout** (3-column):
+   - Left: user profile details, offers (sent, received, declined), verification badge, notifications, upload options (photo, video), membership status, and settings like privacy and offer types allowed
+   - Center: public/global feed for photos, videos, text posts with reaction, comment, and offer-send options
+   - Right: location/age/interest-based profile suggestions in a grid format with buttons (chat, offer, react)
+
+3. **Preloaded Demo Users**:
+   - 1000 demo profiles with AI chatbots
+   - AI chatbot for engaging and romantic conversation (text only, no audio/video)
+
+4. **Engagement Tools**:
+   - Real-time chat
+   - Video call and audio call features for verified/premium users
+   - Earn points by uploading, reacting, chatting, watching videos
+   - Points convertible to wallet and cash out via payment methods
+
+5. **Security and Membership**:
+   - Verified badge system
+   - Membership tiers: Not Verified / Temporarily Approved / Fully Verified
+   - Profile boosting and privacy settings
+
+6. **Technology Stack**:
+   - Firebase Auth, Firestore, Storage
+   - Jetpack Compose
+   - Glide for image handling
+   - Agora or Twilio (for voice/video calling)
+   - OpenAI or Dialogflow (for AI chat)
+   - Payments via Stripe, mobile banking, or local gateway
+
+Please start building this app using Jetpack Compose and Firebase. Set up authentication, Firestore database structure, basic UI layout, and Firebase storage support first. Organize the code modularly, and generate Kotlin files and layout files as needed. Use Gradle 8.11.1, Kotlin 2.0.21, and Compose BOM 2024.09.00.
+
+Let me know what step to follow next and ask if you need any clarification.
