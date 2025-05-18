@@ -2,60 +2,71 @@ package com.kilagee.onelove.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-// Gradient colors
-val GradientStart = Color(0xFFFF5F6D)
-val GradientEnd = Color(0xFFFFC371)
+// Light Theme Colors
+val LovePrimary = Color(0xFFE91E63)
+val LoveOnPrimary = Color(0xFFFFFFFF)
+val LovePrimaryContainer = Color(0xFFFFD9E2)
+val LoveOnPrimaryContainer = Color(0xFF3B0014)
 
-// Primary colors
-val PrimaryLight = Color(0xFFF5317F)  // Pink
-val PrimaryDark = Color(0xFFFF82AA)
-val PrimaryContainerLight = Color(0xFFFFD9E3)
-val PrimaryContainerDark = Color(0xFF7D1642)
-val OnPrimaryContainerLight = Color(0xFF3D0020)
-val OnPrimaryContainerDark = Color(0xFFFFD9E2)
+val LoveSecondary = Color(0xFF9C27B0)
+val LoveOnSecondary = Color(0xFFFFFFFF)
+val LoveSecondaryContainer = Color(0xFFF5DAFF)
+val LoveOnSecondaryContainer = Color(0xFF35003B)
 
-// Secondary colors
-val SecondaryLight = Color(0xFF6D4AB5)  // Purple
-val SecondaryDark = Color(0xFFCBBCFF)
-val SecondaryContainerLight = Color(0xFFE9DDFF)
-val SecondaryContainerDark = Color(0xFF522EA8)
-val OnSecondaryContainerLight = Color(0xFF25135D)
-val OnSecondaryContainerDark = Color(0xFFE9DDFF)
+val LoveTertiary = Color(0xFF2196F3)
+val LoveOnTertiary = Color(0xFFFFFFFF)
+val LoveTertiaryContainer = Color(0xFFCFE6FF)
+val LoveOnTertiaryContainer = Color(0xFF001D31)
 
-// Tertiary colors
-val TertiaryLight = Color(0xFF2196F3)  // Blue
-val TertiaryDark = Color(0xFF90CAF9)
-val TertiaryContainerLight = Color(0xFFD1E4FF)
-val TertiaryContainerDark = Color(0xFF0B57A3)
-val OnTertiaryContainerLight = Color(0xFF001D36)
-val OnTertiaryContainerDark = Color(0xFFD1E4FF)
+val LoveError = Color(0xFFBA1A1A)
+val LoveOnError = Color(0xFFFFFFFF)
+val LoveErrorContainer = Color(0xFFFFDAD6)
+val LoveOnErrorContainer = Color(0xFF410002)
 
-// Error colors
-val ErrorLight = Color(0xFFBA1A1A)
-val ErrorDark = Color(0xFFFFB4AB)
-val ErrorContainerLight = Color(0xFFFFDAD6)
-val ErrorContainerDark = Color(0xFF93000A)
-val OnErrorContainerLight = Color(0xFF410002)
-val OnErrorContainerDark = Color(0xFFFFDAD6)
+val LoveBackground = Color(0xFFFFFBFF)
+val LoveOnBackground = Color(0xFF201A1B)
+val LoveSurface = Color(0xFFFFFBFF)
+val LoveOnSurface = Color(0xFF201A1B)
+val LoveSurfaceVariant = Color(0xFFF2DDE1)
+val LoveOnSurfaceVariant = Color(0xFF514347)
+val LoveOutline = Color(0xFF837377)
+val LoveOutlineVariant = Color(0xFFD5C2C6)
+val LoveScrim = Color(0xFF000000)
 
-// Background colors
-val BackgroundLight = Color(0xFFFFFBFF)
-val BackgroundDark = Color(0xFF1A1A1C)
+// Dark Theme Colors
+val LovePrimaryDark = Color(0xFFFFB1C8)
+val LoveOnPrimaryDark = Color(0xFF5E0029)
+val LovePrimaryContainerDark = Color(0xFF85003E)
+val LoveOnPrimaryContainerDark = Color(0xFFFFD9E2)
 
-// Surface colors
-val SurfaceLight = Color(0xFFFFF8F8)
-val SurfaceDark = Color(0xFF1A1A1C)
-val SurfaceVariantLight = Color(0xFFF3DDE2)
-val SurfaceVariantDark = Color(0xFF514347)
-val OnSurfaceVariantLight = Color(0xFF524347)
-val OnSurfaceVariantDark = Color(0xFFD6C2C7)
+val LoveSecondaryDark = Color(0xFFE9B5FF)
+val LoveOnSecondaryDark = Color(0xFF580060)
+val LoveSecondaryContainerDark = Color(0xFF7C0087)
+val LoveOnSecondaryContainerDark = Color(0xFFF5DAFF)
 
-// Other colors
-val OutlineLight = Color(0xFF837377)
-val OutlineDark = Color(0xFF9F8C92)
-val InverseOnSurfaceLight = Color(0xFFFFF0F1)
-val InverseOnSurfaceDark = Color(0xFF1A1A1C)
-val InverseSurfaceLight = Color(0xFF36292C)
-val InverseSurfaceDark = Color(0xFFFFECEE)
-val InversePrimaryLight = Color(0xFFFFB1C8)
-val InversePrimaryDark = Color(0xFFBF0060)
+val LoveTertiaryDark = Color(0xFF99CBFF)
+val LoveOnTertiaryDark = Color(0xFF003354)
+val LoveTertiaryContainerDark = Color(0xFF004A77)
+val LoveOnTertiaryContainerDark = Color(0xFFCFE6FF)
+
+val LoveErrorDark = Color(0xFFFFB4AB)
+val LoveOnErrorDark = Color(0xFF690005)
+val LoveErrorContainerDark = Color(0xFF93000A)
+val LoveOnErrorContainerDark = Color(0xFFFFDAD6)
+
+val LoveBackgroundDark = Color(0xFF201A1B)
+val LoveOnBackgroundDark = Color(0xFFEBE0E1)
+val LoveSurfaceDark = Color(0xFF201A1B)
+val LoveOnSurfaceDark = Color(0xFFEBE0E1)
+val LoveSurfaceVariantDark = Color(0xFF514347)
+val LoveOnSurfaceVariantDark = Color(0xFFD5C2C6)
+val LoveOutlineDark = Color(0xFF9E8C90)
+val LoveOutlineVariantDark = Color(0xFF514347)
+val LoveScrimDark = Color(0xFF000000)
+
+// Special colors for OneLove app
+val LoveHeartRed = Color(0xFFFF4081)
+val LoveGold = Color(0xFFFFD700)
+val LovePremium = Color(0xFF8E24AA)
+val LoveSuccessGreen = Color(0xFF4CAF50)
+val LoveMatchBlue = Color(0xFF2196F3)

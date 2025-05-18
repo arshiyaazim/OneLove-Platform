@@ -13,12 +13,12 @@ plugins {
 
 android {
     namespace = "com.kilagee.onelove"
-    compileSdk = 35
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.kilagee.onelove"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
@@ -89,7 +89,8 @@ dependencies {
     kapt("androidx.room:room-compiler:2.6.1")
 
     // Firebase (with BOM)
-    implementation(platform("com.google.firebase:firebase-bom:33.13.0"))
+    // Version compatible with Kotlin 1.9.20
+    implementation(platform("com.google.firebase:firebase-bom:32.7.0"))
     implementation("com.google.firebase:firebase-auth-ktx")
     implementation("com.google.firebase:firebase-firestore-ktx")
     implementation("com.google.firebase:firebase-storage-ktx")

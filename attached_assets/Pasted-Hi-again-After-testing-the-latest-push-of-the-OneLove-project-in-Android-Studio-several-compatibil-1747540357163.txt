@@ -1,0 +1,62 @@
+Hi again! After testing the latest push of the OneLove project in Android Studio, several compatibility issues and a UI refinement checkpoint remain. Please resolve the following to ensure full build stability and a polished user experience:
+
+✅ 1. SDK & Android Gradle Plugin (AGP) Compatibility
+I’ve downgraded the project to compileSdk = 34 to avoid issues with AGP 8.2.0 (which officially supports up to SDK 34).
+
+However, the current project still contains warnings or config referencing SDK 35. Please:
+
+Ensure all modules use compileSdk and targetSdk = 34
+
+Remove or adjust android.suppressUnsupportedCompileSdk=35 if no longer needed
+
+Align all build files to this SDK version
+
+✅ 2. Kotlin Version Conflict with Dependencies
+I am using Kotlin 1.9.20, but many Firebase/Google libraries (like Firebase Auth, Analytics KTX, Play Services) were compiled with Kotlin 2.1.0, causing metadata version errors.
+
+Please:
+
+Downgrade those dependencies to versions compiled with Kotlin 1.9.x
+
+Or update the project to use Kotlin 2.1.0 safely — but only if all other modules and dependencies support it
+
+⚠️ Mixing Kotlin 1.9.x and 2.1.0 leads to build failure. Please choose a consistent approach.
+
+✅ 3. Fix AndroidManifest.xml and Permissions for Modern Android
+Remove deprecated permissions like WRITE_EXTERNAL_STORAGE
+
+Add scoped storage permissions for Android 10+ and photo picker support for Android 14+
+
+Ensure these are added correctly:
+
+xml
+Copy
+Edit
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+<uses-feature android:name="android.hardware.camera" android:required="false"/>
+Confirm any missing flags or logic related to Android 13/14+ permission handling are addressed
+
+✅ 4. Clean Kotlin Function/Class Naming Conflicts
+You fixed the OneLoveApp() naming ambiguity — thanks!
+
+Please make sure no duplicate or misleading names remain that might resurface during refactoring.
+
+🎨 5. [Checkpoint] Update App UI and Theme Presentation
+Please modernize and polish the app’s UI, following Material Design 3 principles:
+
+Define a clean Compose theme setup (Theme.kt)
+
+Light/dark mode support
+
+Primary/secondary color schemes
+
+Typography scale using MaterialTheme.typography
+
+Apply consistent theming across all screens (auth, chat, video, subscriptions)
+
+If not already done, use Material 3 components:
+
+Button, TextField, Scaffold, TopAppBar, etc.
+
+Ensure UI is adaptive for Android 10 to 14+ devices

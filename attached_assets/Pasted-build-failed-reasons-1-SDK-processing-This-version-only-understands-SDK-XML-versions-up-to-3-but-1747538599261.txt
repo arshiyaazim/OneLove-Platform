@@ -1,0 +1,23 @@
+build failed, reasons: 1. SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times, 2. We recommend using a newer Android Gradle plugin to use compileSdk = 35
+
+This Android Gradle plugin (8.2.0) was tested up to compileSdk = 34.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 35.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 35 is available.
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=35
+to this project's gradle.properties, 3. > Task :app:kaptGenerateStubsDebugKotlin
+e: Could not load module <Error module>
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/0d51b041d785c84c0ee689a2a0032f51/transformed/play-services-measurement-impl-22.4.0-api.jar!/META-INF/java.com.google.android.gms.libs.filecompliance.proto_file_access_api_type_kt_proto_lite.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/0d51b041d785c84c0ee689a2a0032f51/transformed/play-services-measurement-impl-22.4.0-api.jar!/META-INF/third_party.kotlin.protobuf.src.commonMain.kotlin.com.google.protobuf.kotlin_only_for_use_in_proto_generated_code_its_generator_and_tests.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/0d51b041d785c84c0ee689a2a0032f51/transformed/play-services-measurement-impl-22.4.0-api.jar!/META-INF/third_party.kotlin.protobuf.src.commonMain.kotlin.com.google.protobuf.kotlin_shared_runtime.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/102604de0739e8356d0bb7319fb85a8b/transformed/firebase-auth-23.2.0-api.jar!/META-INF/java.com.google.android.gmscore.integ.client.firebase-auth-api_firebase-auth-api.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/21b85556fc8cc6a8aa2fe64a8d0e085b/transformed/firebase-analytics-ktx-22.4.0-api.jar!/META-INF/java.com.google.android.libraries.firebase.firebase_analytics_ktx_granule.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/289ec772a94a6f31eb5a0235785cdc91/transformed/play-services-measurement-api-22.4.0-api.jar!/META-INF/java.com.google.android.gmscore.integ.client.measurement_api_measurement_api.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+e: file:///C:/Users/Alhamdulillah/.gradle/caches/transforms-3/f7017a044b828f8dc53a7c8414d433f5/transformed/firebase-auth-ktx-23.2.0-api.jar!/META-INF/java.com.google.android.libraries.firebase.firebase_auth_ktx_granule.kotlin_moduleModule was compiled with an incompatible version of Kotlin. The binary version of its metadata is 2.1.0, expected version is 1.9.0.
+
+> Task :app:kaptGenerateStubsDebugKotlin FAILED, 4. Compilation error. See attached log for more details.
