@@ -5,10 +5,18 @@ import androidx.compose.material3.Shapes
 import androidx.compose.ui.unit.dp
 
 /**
- * Shapes for the app
+ * Shapes for OneLove app following Material 3 guidelines
  */
-val Shapes = Shapes(
+val OneLoveShapes = Shapes(
+    // Small components like chips, buttons
     small = RoundedCornerShape(4.dp),
+    
+    // Medium components like cards, dialogs
     medium = RoundedCornerShape(12.dp),
-    large = RoundedCornerShape(16.dp)
+    
+    // Large components like bottom sheets, navigation drawers
+    large = RoundedCornerShape(16.dp),
+    
+    // Extra large components (custom)
+    extraLarge = RoundedCornerShape(28.dp)
 )
