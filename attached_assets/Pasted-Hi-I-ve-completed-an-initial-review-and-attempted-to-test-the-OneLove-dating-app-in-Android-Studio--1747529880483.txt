@@ -1,0 +1,88 @@
+Hi, I’ve completed an initial review and attempted to test the OneLove dating app in Android Studio. However, I'm encountering several critical issues that need your support to resolve. Below is a categorized summary of the problems and questions:
+
+🛠️ 1. Android Studio SDK Build Errors (XML parsing + sync issues)
+I’m seeing this error during Gradle sync:
+
+pgsql
+Copy
+Edit
+This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered.
+package.xml parsing problem. unexpected element (uri:"", local:"abis")
+✅ Please ensure that:
+
+The SDK command-line tools used in the project are compatible with Android Studio Hedgehog or later.
+
+No deprecated or corrupt SDK metadata is being referenced.
+
+The correct compileSdkVersion, buildToolsVersion, and tools are in place to avoid this issue.
+
+📦 2. Dependency Resolution Error – Compose Testing Library
+I'm getting:
+
+css
+Copy
+Edit
+Failed to resolve: androidx.compose.ui:ui-test-junit4
+However, the following dependencies are declared in the project:
+
+androidx.test.ext:junit:1.1.5
+
+junit:junit:4.13.2
+
+✅ Please:
+
+Confirm if ui-test-junit4 is declared in the proper scope.
+
+Ensure the google() and mavenCentral() repositories are correctly listed in both build.gradle.kts (project) and settings.gradle.kts.
+
+Update or correct any missing dependency versions related to Compose UI testing.
+
+📄 3. AndroidManifest.xml Errors and Warnings
+Warnings include:
+
+Camera permission exists without a matching <uses-feature android:required="false"/> declaration.
+
+Deprecated permission WRITE_EXTERNAL_STORAGE used (not effective in Android 10+).
+
+Missing support for Selected Photos Access on Android 14+.
+
+✅ Please:
+
+Add <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
+Remove deprecated storage permissions and replace with:
+
+xml
+Copy
+Edit
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
+Implement logic or permission handling for scoped photo access in Android 14+.
+
+🧠 4. MainActivity.kt – Overload Resolution Ambiguity
+Error shown:
+
+kotlin
+Copy
+Edit
+Overload resolution ambiguity:
+- public constructor OneLoveApp()
+- public fun OneLoveApp(): Unit
+✅ This occurs because the app defines both a class and a function named OneLoveApp() in the same package/scope.
+Please remove or rename the function to avoid conflicting with the class OneLoveApp : Application().
+
+⚙️ 5. build.gradle.kts (app) – Outdated Targets and Upgrade Concerns
+Warnings include:
+
+Not targeting the latest versions of Android; compatibility modes apply.
+
+compileSdkVersion 35 is available (currently using 34).
+
+❗My app is currently based on older Android SDKs, and upgrading may break compatibility or introduce new dependency issues.
+
+✅ Please:
+
+Review whether it’s safe to upgrade to compileSdkVersion 35 and targetSdkVersion 35 without breaking current features.
+
+If an upgrade is applied, ensure all dependencies and libraries are compatible and the Manifest and permissions reflect modern API requirements.
+
