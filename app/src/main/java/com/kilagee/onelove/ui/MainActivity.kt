@@ -27,7 +27,7 @@ class MainActivity : ComponentActivity() {
         Timber.d("MainActivity onCreate")
         
         setContent {
-            OneLoveApp()
+            OneLoveAppContent()
         }
     }
 }
@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
  * Main composable for the app
  */
 @Composable
-fun OneLoveApp() {
+fun OneLoveAppContent() {
     OneLoveTheme {
         Surface(
             modifier = Modifier.fillMaxSize(),
